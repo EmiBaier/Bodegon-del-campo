@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Bodegón</title>
+  </head>
+  <body>
+
+<!-- HEADER -->
+    <nav id="header">
+      <a href="#inicio"><div class="header-logo"></div></a>
+
+      <ul class="hamburguesa">
+        <li><a id="hamburguer"><i class="fas fa-bars"></i></a></li>
+        <li><a href="#bienvenidos">Bienvenidos</a></li>
+        <li><a href="#platos-del-dia">Platos del día</a></li>
+        <li><a href="#menus">Menús</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+<!-- sección INICO -->
+    <section id="inicio" class="inicio">
+      <nav class="header_inicio">
+        <ul>
+          <li><a href="#bienvenidos">Bienvenidos</a></li>
+          <li><a href="#platos-del-dia">Platos del día</a></li>
+          <li><a href="#menus">Menús</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-inicio">
+        <p>Lorem ipsum dolor sit amet, consectetur</p>
+      </div>
+
+      <nav class="footer-inicio">
+        <ul>
+          <li><a href="#"><img src="src/instagram.png"></a></li>
+          <li><a href="#"><img src="src/facebook.png"></a></li>
+          <li><a href="#"><img src="src/whatsapp.png"></a></li>
+        </ul>
+
+        <a href="#bienvenidos"><div class="flecha"></div></a>
+      </nav>
+    </section>
+
+<!-- sección BIENVENIDOS -->
+    <section id="bienvenidos" class="bienvenidos">
+      <div class="contnedor-bienvenidos">
+        <p class="txt" id="uno">¡bienvenidos!</p>
+        <p class="txt" id="dos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="txt" id="tres">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </section>
+
+<!-- sección PLATOS DEL DÍA -->
+    <section id="platos-del-dia" class="platos-del-dia">
+    </section>
+
+<!-- sección MENÚS -->
+    <section id="menus" class="menus">
+    </section>
+
+<!-- sección CONTACTO -->
+    <section class="contacto" id="contacto">
+      <div class="contenedor-contacto">
+        <h1>logo</h1>
+        <div class="contenedor2">
+          <div class="contenedor-izq">
+
+            <p class="direccion">
+              Calle 1234,<br>esq. Calle2,<br>Localidad
+            </p>
+            <ul class="redes-contacto">
+              <li>15 0000 0000 <img src="src/whatsapp.png"></li>
+              <li>/elrestó <img src="src/facebook.png"></li>
+              <li>/elrestó <img src="src/instagram.png"></li>
+            </ul>
+            <p class="dia-hora" id="dia-hora-izq"> <b>Lunes - <br> Viernes </b> <br> 5am - 10pm</p>
+
+          </div>
+          <div class="contenedor-der">
+
+            <ul class="secciones-contacto">
+              <li><a href="#inicio">inicio</a></li>
+              <li><a href="#bienvenidos">bienvenidos</a></li>
+              <li><a href="#platos-del-dia">platos del día</a></li>
+              <li><a href="#menus">menús</a></li>
+            </ul>
+
+            <p class="dia-hora" id="dia-hora-der">
+              <b> Sábados</b><br>11am - 4pm <br> 5pm - 10pm
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+<!-- FOOTER -->
+  <footer>
+    <p>Diseño y desarrollo por OUTERGATE STUDIO S.R.L. - Todos los derechos reservados.</p>
+  </footer>
+
+  <script type="text/javascript">
+    const menuBtn = document.getElementById("hamburguer");
+
+    menuBtn.addEventListener("click", () => {
+      if(document.querySelector(".hamburguesa.show")){
+        document.querySelector(".hamburguesa").classList.remove("show");
+      } else {
+        document.querySelector(".hamburguesa").classList.add("show");
+      }
+    })
+  </script>
+
+</html>
