@@ -225,7 +225,10 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   animation-name: animacion-logo;
-  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes animacion-logo {
@@ -239,12 +242,12 @@ section {
   color: white;
   width: 100%;
   text-align: center;
-  bottom: 0;
-  font-size: 17pt;
+  bottom: 15px;
+  font-size: 15pt;
   opacity: 0;
   animation-name: animacion-logo-txt;
   animation-duration: .7s;
-  animation-delay: 1.4s;
+  animation-delay: 3.2s;
   animation-fill-mode: forwards;
 }
 
@@ -296,6 +299,40 @@ section {
   font-weight: 600;
 }
 /* FIN BIENVENIDOS */
+
+/* MENÚS */
+.contenedor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cabeceras {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: #EEE;
+  cursor: pointer;
+}
+
+.pestanas {
+  position: absolute;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+
+.p-activa {
+  visibility: visible;
+  opacity: 1;
+}
+
+.c-activa {
+  background-color: #AAA;
+  color: white;
+}
+/* FIN DE MEMÚS */
 
 /* CONTACTO */
 #contacto{
