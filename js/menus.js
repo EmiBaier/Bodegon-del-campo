@@ -11,7 +11,11 @@ function mostrarPestanas(n) {
   }
   pestanas[n].className += ' p-activa';
   cabeceras[n].className += ' c-activa';
+
+  console.log(cabeceras);
+  console.log(pestanas);
 }
+
 
 // var menus = {
 //   "lunes": [
